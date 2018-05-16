@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoDetail = ({video}) => {
     if(!video){
-        return <div> loading . . .</div>;
+        return <div className="embed-responsive embed-responsive-16by9"> loading . . .</div>;
     };
     const videoId = video.id.videoId;
     const url = `https://www.youtube.com/embed/${videoId}`;
